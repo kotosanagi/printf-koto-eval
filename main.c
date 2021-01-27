@@ -1,4 +1,6 @@
-#include "includes/ft_printf.h"
+// gcc -Wall -Wextra -Werror main.c ../libftprintf.a && ./a.out
+
+#include "../includes/ft_printf.h"
 #include <stdio.h>
 
 int main()
@@ -21,9 +23,9 @@ int main()
 	printf("\nft ret : %d\n", x-5);
 	printf("og ret : %d\n\n", y-5);
 
-	x = ft_printf("ft:[%p]", 0);
+	x = ft_printf("ft:[%p]", &y);
 	printf("\n");
-	y = printf("og:[%p]", 0);
+	y = printf("og:[%p]", &x);
 	printf("\nft ret : %d\n", x-5);
 	printf("og ret : %d\n\n", y-5);
 
@@ -239,4 +241,3 @@ int main()
 
 	return 0;
 }
-

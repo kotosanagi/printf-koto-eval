@@ -25,7 +25,7 @@ int main()
 
 	x = ft_printf("ft:[%p]", &y);
 	printf("\n");
-	y = printf("og:[%p]", &x);
+	y = printf("og:[%p]", &y);
 	printf("\nft ret : %d\n", x-5);
 	printf("og ret : %d\n\n", y-5);
 
